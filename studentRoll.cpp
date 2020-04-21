@@ -74,13 +74,14 @@ StudentRoll & StudentRoll::operator =(const StudentRoll &right ) {
         delete temp;
         temp = head;
     }
-    
+/*    
     Node *temp2 = right.head;
     
     while(temp2){
         insertAtTail(*(temp2->s));
         temp2 = temp2 ->next;
     }
+*/
   // KEEP THE CODE BELOW THIS LINE
   // Overloaded = should end with this line, despite what the textbook says.
   return (*this); 
