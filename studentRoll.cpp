@@ -67,16 +67,6 @@ StudentRoll & StudentRoll::operator =(const StudentRoll &right ) {
   // TODO... Here is where there is code missing that you need to 
   // fill in...
     
-    Node *deleter = this->head;
-    while(deleter!=NULL){
-        Node* deleter2 = deleter;
-        deleter = deleter -> next;
-        delete deleter2->s;
-        delete deleter2;
-    }
-    
-    Node *temp2 = right.head;
-    
     while(temp2){
         insertAtTail(*(temp2->s));
         temp2 = temp2 ->next;
